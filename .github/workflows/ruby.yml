@@ -28,9 +28,10 @@ jobs:
       uses: docker/build-push-action@v1
       with:
         push: false               
-    - uses: nick-invision/retry@v2
+    - name: Retry Step
+      uses: nick-invision/retry@v2.4.0
       with:
-        timeout_seconds: 15
-        max_attempts: 3
-        retry_on: timeout
-        command: echo "hi dude"
+       timeout_seconds: 15
+       max_attempts: 3
+       retry_on: timeout
+       command: npm run some-typically-fast-script
